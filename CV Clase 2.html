@@ -22,36 +22,48 @@ font-family: 'Judson', serif;
             margin-bottom: 15px;
             background-color: rgb(223, 219, 219);
             padding: 15px;
+            display: flex;
         }
 
         header h1 {
             color: rgb(83, 26, 189)
         }
 
-        header img {
+        .img-acm {
             margin-right: 15px;
             width: 80px;
+            height: 80px;
             object-fit: cover;
             border-radius: 100%;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        article:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
 
         article {
             margin-bottom: 15px;
             background-color: rgb(247, 243, 243);
             padding: 15px;
-            border: 1px solid lightgray
+            border: 1px solid lightgray;
+            transition: all 0.3s;
         }
     </style>
 
 </head>
 <body>
     <header>
-        <img width="80" src="foto.jpg">
+        <img class="img-acm" src="foto.jpg" />
         <div>
             <h1>Andrea Cayo</h1>
             <h2>Especialista en Marketing</h2>
         </div>
-
     </header>
 
     <article>
