@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Hind+Siliguri&family=Judson&display=swap" rel="stylesheet">
 
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
     <style>
         @import url(estilos.css);
         @import url(css/estilos1.css);
@@ -17,40 +19,42 @@
 
     <div class="contenedor"> 
         <header>
-            <img class="img-acm" src="foto.jpg" />
-            <div>
-                <h1>Andrea Cayo</h1>
-                <h2>Especialista en Marketing</h2>
-                <p>123abc</p>
+            <div class="imagen-titulo">
+                <img class="img-acm" src="foto.jpg" />
+                <div class="titulos">
+                    <h1>Andrea Cayo</h1>
+                    <h2>Especialista en Marketing</h2>
+                </div>
             </div>
-            <div>
-                <h1>Andrea Cayo</h1>
-                <h2>Especialista en Marketing</h2>
-                <p>123abc</p>
-            </div>
-            <div>
-                <h1>Andrea Cayo</h1>
-                <h2>Especialista en Marketing</h2>
-                <p>123abc</p>
-            </div>
+
+            <p>Licenciada en Ingeniería Industrial y Comercial con <span class="resaltado-oscuro">especialización en Marketing</span>.
+                Experiencia por más de 4 años en las áreas: <span class="resaltado-amarillo">Comercial, Ventas y Marketing</span>.
+                <br>Persona creativa, sociable, perseverante, con enfoque de trabajo en equipo y por objetivos. Visión global desarrollada 
+                por estudios y trabajos en diversos países.</p>
+
         </header>
 
         <div class="contenido">
             <article>
-                <h4>Educación</h4>
-                <!-- Unsorted List -->
-                <ul>
-                    <li>Centrum Católica</li>
-                    <li>EADA Business School</li>
-                    <li>Universidad ESAN</li>
-                </ul>
+                <a href="https:www.google.com">
+                    <h4>Educación</h4>
+                    <!-- Unsorted List -->
+                    <ul>
+                        <li>Centrum Católica</li>
+                        <li>EADA Business School</li>
+                        <li>Universidad ESAN</li>
+                    </ul>
+                </a>
+
             </article>
         
             <article>
                 <h4>Experiencia laboral</h4>
                 <ul>
                     <li>Bebidas Premium S.A.C.</li>
+                        <p>Coordinadora de Marketing</p>
                     <li>Robert Bosch S.A.</li>
+                        <p>Analista de Trade Marketing</p>
                 </ul>
             </article>
 
@@ -58,11 +62,22 @@
                 <h4>Idiomas</h4>
                 <ul>
                     <li>Inglés</li>
+                        <p>Avanzado</p>
                     <li>Alemán</li>
+                        <p>Básico</p>
                 </ul>
             </article>
         </div>
     </div>
 
+    <script>
+        $('article').click(function () {
+            $(this).toggleClass('active');
+        });
+
+        $('img').click(function () {
+            $(this).toggleClass('big');
+        })
+    </script>
 </body>
 </html>

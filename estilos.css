@@ -11,7 +11,7 @@ h1, h2, h4, ul {
 .contenedor {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 1050px;
     margin: 0 auto;
 }
 
@@ -21,10 +21,10 @@ h1, h2, h4, ul {
         color: royalblue; */
         padding: 15px;
         display: flex;
-        width: 30%;
+        flex-direction: column;
+        width: 35%;
         margin-right: 15px;
         border-right: 2px solid rgba(49, 49, 49);
-        flex-direction: column;
     }
 
         .img-acm {
@@ -44,14 +44,39 @@ h1, h2, h4, ul {
                 margin-bottom: 5px;
             }
 
-            header div {
+            .imagen-titulo {
                 display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-        }
+             }
+
+             .titulos{
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+             }
+
+            .resaltado-oscuro {
+                background-color: rgb(106, 96, 244);
+                font-weight: bold;
+                color: snow;
+                padding-left: 3px;
+                padding-right: 3px;
+                font-size: 20px;
+            }
+
+            .resaltado-amarillo {
+                background-color: rgb(244, 205, 96);
+                font-weight: bold;
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+
+            img.big {
+                transform: scale(1.2);
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
 
     .contenido {
-        width: 70%;
+        width: 65%;
     }
    
         article {
@@ -60,10 +85,29 @@ h1, h2, h4, ul {
         padding: 15px;
         border: 1px solid lightgray;
         transition: all 0.3s;
+        cursor: pointer;
         }
+
+            article a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            article ul, article p {
+                display: none;
+            }
 
             article:hover {
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+
+            .active {
+                background-color: rgb(0, 51, 128);
+                color: whitesmoke;
+            }
+
+            article.active ul, article.active p {
+                display: block;
             }
 
 
