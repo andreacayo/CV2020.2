@@ -8,84 +8,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Hind+Siliguri&family=Judson&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            font-family: 'Cabin', sans-serif;
-font-family: 'Hind Siliguri', sans-serif;
-font-family: 'Judson', serif;
-        }
-
-        h1, h2, h4, ul {
-            margin: 0;
-        }
-
-        header {
-            margin-bottom: 15px;
-            background-color: rgb(223, 219, 219);
-            padding: 15px;
-            display: flex;
-        }
-
-        header h1 {
-            color: rgb(83, 26, 189)
-        }
-
-        .img-acm {
-            margin-right: 15px;
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 100%;
-        }
-
-        header div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        article:hover {
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        }
-
-        article {
-            margin-bottom: 15px;
-            background-color: rgb(247, 243, 243);
-            padding: 15px;
-            border: 1px solid lightgray;
-            transition: all 0.3s;
-        }
+        @import url(estilos.css);
+        @import url(css/estilos1.css);
     </style>
 
 </head>
 <body>
-    <header>
-        <img class="img-acm" src="foto.jpg" />
-        <div>
-            <h1>Andrea Cayo</h1>
-            <h2>Especialista en Marketing</h2>
+
+    <div class="contenedor"> 
+        <header>
+            <img class="img-acm" src="foto.jpg" />
+            <div>
+                <h1>Andrea Cayo</h1>
+                <h2>Especialista en Marketing</h2>
+                <p>123abc</p>
+            </div>
+            <div>
+                <h1>Andrea Cayo</h1>
+                <h2>Especialista en Marketing</h2>
+                <p>123abc</p>
+            </div>
+            <div>
+                <h1>Andrea Cayo</h1>
+                <h2>Especialista en Marketing</h2>
+                <p>123abc</p>
+            </div>
+        </header>
+
+        <div class="contenido">
+            <article>
+                <h4>Educación</h4>
+                <!-- Unsorted List -->
+                <ul>
+                    <li>Centrum Católica</li>
+                    <li>EADA Business School</li>
+                    <li>Universidad ESAN</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h4>Experiencia laboral</h4>
+                <ul>
+                    <li>Bebidas Premium S.A.C.</li>
+                    <li>Robert Bosch S.A.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Idiomas</h4>
+                <ul>
+                    <li>Inglés</li>
+                    <li>Alemán</li>
+                </ul>
+            </article>
         </div>
-    </header>
-
-    <article>
-        <h4>Educación</h4>
-        <ul>
-            <li>Centrum Católica</li>
-            <li>EADA Business School</li>
-            <li>Universidad ESAN</li>
-        </ul>
-    </article>
-
-    <article>
-        <h4>Experiencia laboral</h4>
-        <ul>
-            <li>Bebidas Premium S.A.C.</li>
-            <li>Robert Bosch S.A.</li>
-        </ul>
-    </article>
-
-
-
-
+    </div>
 
 </body>
 </html>
